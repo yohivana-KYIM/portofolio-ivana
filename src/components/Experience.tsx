@@ -405,23 +405,6 @@ const Experience: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <style jsx global>{`
-        @keyframes fade-in-up {
-          from { 
-            opacity: 0; 
-            transform: translateY(12px); 
-          }
-          to { 
-            opacity: 1; 
-            transform: translateY(0); 
-          }
-        }
-        
-        .animate-fade-in-up {
-          animation: fade-in-up 0.6s ease-out forwards;
-        }
-      `}</style>
     </section>
   );
 };

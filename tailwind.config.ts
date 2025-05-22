@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -111,6 +110,28 @@ export default {
 				'float': {
 					'0%, 100%': { transform: 'translateY(0)' },
 					'50%': { transform: 'translateY(-10px)' }
+				},
+				'float-slow': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-20px)' }
+				},
+				'float-reverse': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(20px)' }
+				},
+				'bounce-slow': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'fade-in-up': {
+					'from': { 
+						opacity: '0', 
+						transform: 'translateY(12px)' 
+					},
+					'to': { 
+						opacity: '1', 
+						transform: 'translateY(0)' 
+					}
 				}
 			},
 			animation: {
@@ -119,7 +140,11 @@ export default {
 				'fade-in': 'fade-in 0.8s ease-out',
 				'fade-in-left': 'fade-in-left 0.8s ease-out',
 				'fade-in-right': 'fade-in-right 0.8s ease-out',
-				'float': 'float 6s ease-in-out infinite'
+				'float': 'float 6s ease-in-out infinite',
+				'float-slow': 'float-slow 6s ease-in-out infinite',
+				'float-reverse': 'float-reverse 8s ease-in-out infinite',
+				'bounce-slow': 'bounce-slow 4s ease-in-out infinite',
+				'fade-in-up': 'fade-in-up 0.6s ease-out forwards'
 			}
 		}
 	},

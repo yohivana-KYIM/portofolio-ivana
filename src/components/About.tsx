@@ -270,25 +270,6 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-
-      <style jsx>{`
-        @keyframes float-slow {
-          0%, 100% { transform: translateY(0px) rotate(0deg); }
-          50% { transform: translateY(-20px) rotate(5deg); }
-        }
-        @keyframes float-reverse {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(15px); }
-        }
-        @keyframes bounce-slow {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-10px); }
-        }
-        
-        .animate-float-slow { animation: float-slow 6s ease-in-out infinite; }
-        .animate-float-reverse { animation: float-reverse 8s ease-in-out infinite; }
-        .animate-bounce-slow { animation: bounce-slow 4s ease-in-out infinite; }
-      `}</style>
     </section>
   );
 };
